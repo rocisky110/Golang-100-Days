@@ -1,0 +1,34 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "go",
+			"label": "go: build file",
+			"command": "build",
+			"args": [
+				"${file}"
+			],
+			"problemMatcher": [
+				"$go"
+			],
+			"group": "build",
+			"detail": "cd c:\\SourceCode\\Golang-100-Days; go build ${file}",
+			"presentation": {
+				"panel": "shared", //这里shared表示共享，改成new之后每个进程创建新的端口
+			}		
+		},
+		{
+			"type": "go",
+			"label": "go: build package",
+			"command": "build",
+			"args": [
+				"${fileDirname}"
+			],
+			"problemMatcher": [
+				"$go"
+			],
+			"group": "build",
+			"detail": "cd c:\\SourceCode\\Golang-100-Days; go build ${fileDirname}"
+		},
+	]
+}
