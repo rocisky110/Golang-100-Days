@@ -22,12 +22,12 @@ func main() {
 	fmt.Println(a2)
 	fmt.Printf("二维数组的地址：%p\n", &a2)
 	fmt.Printf("二维数组的长度：%d\n", len(a2))
-
+	//二维数字长度len()跟随元素
 	fmt.Printf("一维数组的长度：%d\n", len(a2[0]))
 	fmt.Println(a2[0][3]) // 4
 	fmt.Println(a2[1][2]) //7
 	fmt.Println(a2[2][1]) // 10
-
+	
 	//遍历二维数组
 	for i:=0;i<len(a2);i++{
 		for j:=0;j<len(a2[i]);j++{
