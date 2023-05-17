@@ -75,7 +75,7 @@ func AesCBCEncrypt(rawData []byte) ([]byte, error) {
 	//初始向量IV必须是唯一，但不需要保密
 	cipherText := make([]byte, len(rawData))
 	//block大小 16
-	var iv []byte = []byte{'g', 'f', 'd', 'e', 'r', 't', 'f', 'g', 'h', 'j', 'k', 'u', 'y', 'r', 't', 'g'}
+	var iv []byte = []byte{'9', '5', '2', 'e', 'r', 't', 'f', 'g', 'h', 'j', 'k', 'u', 'y', 'r', 't', 'g'}
 
 	//block大小和初始向量大小一定要一致
 	mode := cipher.NewCBCEncrypter(block, iv)
