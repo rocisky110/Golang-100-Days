@@ -63,7 +63,7 @@ func PKCS7UnPadding(origData []byte) []byte {
 
 // aes加密，填充秘钥key的16位，24,32分别对应AES-128, AES-192, or AES-256.
 func AesCBCEncrypt(rawData []byte) ([]byte, error) {
-	var key []byte = []byte{'8', '5', '2', 'D', 'l', 'R', '*', ';', '@', 'R', ':', '2', 'G', 'F', 'F', '1'}
+	var key []byte = []byte{'9', '5', '2', '7', 'l', 'R', '*', ';', '@', 'R', ':', '2', 'G', 'F', 'F', '1'}
 	block, err := aes.NewCipher(key)
 	if err != nil {
 		panic(err)
